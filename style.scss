@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 1.563rem;
+  height: 0.188rem;
+  background: #17202a;
+  margin: 0.313rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.logo {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logo ul {
+  margin-left: 1rem;
+}
+
+.navbar {
+  height: 6.25rem;
+  box-shadow: 0 0 5px 0 #17202aa9;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 0.9rem;
+  color: #17202a;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  font-size: 1rem;
+
+  &:hover {
+    color: #029567;
+  }
+}
+
+.btn-black {
+  background-color: #17202a;
+  padding: 0.438rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #343c44;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+  padding: 0.438rem;
+  border: 1px solid #17202a;
+  border-radius: 1.25rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #343c443b;
+  }
+
+  a {
+    color: #17202a;
+
+    &:hover {
+      color: #17202a;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #eee;
+  margin-top: 1.4rem;
+  height: 90vh;
+
+  img {
+    height: 30rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1.4rem 5rem;
+  }
+
+  button {
+    padding: 0.625rem;
+    border-radius: 1.25rem;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #eee;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #005b3e;
+    }
+  }
+}
+
+.content:nth-of-type(1) {
+  background: #003625;
+}
+
+.content:nth-of-type(2) {
+  background: linear-gradient(
+    248deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+section.deliver {
+  .grid {
+    gap: 2rem;
+  }
+}
+
+.deliver-content {
+  background: #4db09159;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #17202a;
+  margin-top: 2rem;
+
+  img {
+    height: 28rem;
+    width: 100%;
+    transform: translateY(-8.7%);
+  }
+
+  svg {
+    height: 20rem;
+    border-radius: 1rem;
+    transform: rotate(-20deg);
+    margin-bottom: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin: 2rem 5rem;
+  }
+
+  button {
+    padding: 0.625rem;
+    border-radius: 1.25rem;
+    background: transparent;
+    border: 1px solid #17202a;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #17202a;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: #3038403b;
+    }
+
+    cursor: pointer;
+  }
+}
+
+section.earn {
+  .content {
+    height: 60vh;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.9;
+    }
+
+    img {
+      height: 15rem;
+      width: 22rem;
+    }
+
+    button {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #3038403b;
+      }
+    }
+  }
+
+  .content:nth-of-type(1) {
+    background: #63938459;
+  }
+
+  .content:nth-of-type(2) {
+    background: #4db09159;
+    color: #17202a;
+
+    button {
+      color: #17202a;
+      border-color: #17202a;
+    }
+  }
+}
+
+section.black {
+  .content {
+    height: 60vh;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.9;
+    }
+
+    button {
+      color: #17202a;
+      border-color: #17202a;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #3038403b;
+      }
+    }
+  }
+
+  .content:nth-of-type(1) {
+    background: #4db09159;
+    color: #17202a;
+  }
+
+  .content:nth-of-type(2) {
+    background: url("./SBX2020123-Black-History-Month-Casey-4-1024x683.jpeg")
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+section.netflix {
+  .content {
+    height: 60vh;
+
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+      line-height: 1.9;
+    }
+
+    button {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #007f57;
+      }
+    }
+  }
+
+  .content:nth-of-type(1) {
+    background: url("./137-76831.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content:nth-of-type(2) {
+    background: #005b3e;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    position: absolute;
+    right: 0;
+    height: 86vh;
+    width: 80%;
+    top: 14vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    text-transform: capitalize;
+
+    a {
+      font-size: 1.2rem;
+    }
+
+    li {
+      margin: 1.3rem;
+      opacity: 0;
+    }
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  section.hero {
+    .grid {
+      display: block;
+    }
+
+    .content:nth-of-type(1) {
+      height: 35vh;
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        font-size: 0.8rem;
+      }
+    }
+    .content:nth-of-type(2) {
+      height: 65vh;
+      margin-top: 0;
+    }
+  }
+
+  section.deliver {
+    .grid {
+      display: block;
+    }
+
+    .deliver-content:nth-of-type(1) {
+      .deliver-content:nth-of-type(2) {
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .deliver-content:nth-of-type(2) {
+      img {
+        transform: translateY(-18%);
+        height: 23rem;
+      }
+    }
+  }
+
+  section.earn {
+    .grid {
+      display: block;
+    }
+    .content:nth-of-type(1) {
+      height: 35vh;
+
+      img {
+        height: 10rem;
+        width: 15rem;
+      }
+    }
+    .content:nth-of-type(2) {
+      height: 65vh;
+      margin-top: 0;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  section.black {
+    .grid {
+      display: block;
+    }
+
+    .content:nth-of-type(1) {
+      height: 35vh;
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 0.5rem;
+      }
+
+      button {
+        font-size: 0.8rem;
+      }
+    }
+
+    .content:nth-of-type(2) {
+      height: 35vh;
+      margin-top: 0;
+    }
+  }
+
+  section.netflix {
+    .grid {
+      display: block;
+    }
+
+    .content:nth-of-type(1) {
+      height: 50vh;
+    }
+
+    .content:nth-of-type(2) {
+      height: 50vh;
+      margin-top: 0;
+    }
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
